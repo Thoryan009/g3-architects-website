@@ -19,6 +19,9 @@
     cursor: pointer;
     border: 0;
 }
+.description {
+    color: #727272;
+}
 
 header {
     background: rgba(255, 144, 14, 0.10);
@@ -68,9 +71,7 @@ nav li a {
     color: #131313;
 }
 
-.banner-description {
-    color: #727272;
-}
+
 
 .banner img {
     margin-top: 30px;
@@ -99,9 +100,7 @@ nav li a {
     font-style: normal;
     
 }
-.quick-description{
-    color: #727272;
-}
+
 
 .quick-list {
     color: #727272;
@@ -110,6 +109,17 @@ nav li a {
 .features{
     color: #FF900E;
     font-weight: 700;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/*------facts section*/
+.facts-title{
+    
+    font-size: 45px;
+    font-style: normal;
 }
 
 
@@ -121,13 +131,10 @@ nav li a {
         padding: 20px;
     }
 
-    nav {
+    nav, .quick-section{
         flex-direction: column;
     }
-    .quick-section{
-        flex-direction: column;
-        
-    }
+    
     .quick-imgs {
         padding-left: 50px;
         display: grid;
@@ -147,14 +154,10 @@ nav li a {
 
 /*-----tablet devise--*/
 @media screen and (min-width:577px) and (max-width:992px) {
-    nav {
+    nav, .quick-section {
         flex-direction: column;
+    }
 
-    }
-    .quick-section{
-        flex-direction: column;
-        
-    }
     .quick-imgs {
         padding-left: 200px;
         display: grid;
