@@ -1,7 +1,22 @@
-.nav-bar{
+/*Work sans font from google*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Work+Sans:wght@400;600;800&display=swap');
+
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*nav bar*/
+
+
+.nav-bar {
+ 
     display: flex;
 }
-.nav-ul{
+
+.nav-ul>li {
     display: flex;
-    list-style:none ;
+    list-style: none;
 }
