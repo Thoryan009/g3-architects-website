@@ -4,13 +4,13 @@
 
 /*--------shared items-----*/
 
-*{
+* {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
 
 
-.btn-primary{
+.btn-primary {
     background-color: rgb(129, 111, 5);
     border-radius: 8px;
     padding: 20px 30px;
@@ -20,7 +20,7 @@
     border: 0;
 }
 
-header{
+header {
     background: rgba(255, 144, 14, 0.10);
 }
 
@@ -28,26 +28,27 @@ header{
 
 
 nav {
- 
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-title{
+.nav-title {
     font-size: 3rem;
     font-weight: 700;
     margin-left: 30px;
 }
 
-nav > ul{
-    
+nav>ul {
+
     display: flex;
-   list-style: none;
+    list-style: none;
 }
-nav  li a{
+
+nav li a {
     text-decoration: none;
-    
+
     margin-right: 30px;
     font-weight: 500;
     font-size: 1em;
@@ -55,20 +56,22 @@ nav  li a{
 
 /*--banner-----*/
 
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4rem;
-font-weight: 700;
-color: #131313 ;
+    font-weight: 700;
+    color: #131313;
 }
 
 .banner-description {
     color: #727272;
 }
+
 .banner img {
     margin-top: 30px;
     width: 100%;
@@ -77,20 +80,64 @@ color: #131313 ;
 /*-----mobile devices*/
 @media screen and (max-width:576px) {
     header {
-         padding: 20px;
+        padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
 }
 
-/*-----tablet devise--*/
-@media screen and (min-width:577px) and  (max-width:992px) {
- nav {
-    flex-direction: column ;
-
- }
-    
-
+/*-------Quick list of out features---*/
+.quick-section {
+    display: flex;
+    margin-top: 50px;
+    gap: 80px;
 }
 
+.quick-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.quick-text{
+    margin-top: 150px;
+}
+
+.quick-title {
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    
+}
+.quick-description{
+    color: #727272;
+}
+
+.quick-list {
+    color: #727272;
+    font-weight: 500;
+}
+.features{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+/*-----tablet devise--*/
+@media screen and (min-width:577px) and (max-width:992px) {
+    nav {
+        flex-direction: column;
+
+    }
+
+
+}
